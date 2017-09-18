@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Old Bridge: 17 minutes before zombies</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<!-- JQuery -->
+	<script type="text/javascript" src="../JQuery/jquery-3.1.1.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+
+	<!-- bootstrap js -->
+	<!-- <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+	<!-- local css files -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- app js files -->
+	<script type="text/javascript" src="Enum.js"></script>
+	<script type="text/javascript" src="Person.js"></script>
+	<script type="text/javascript" src="vessel.js"></script>
+	<script type="text/javascript" src="transport.js"></script>
+	<script type="text/javascript" src="Gamestatus.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<input type="button" onclick="showHelp()" value="Help" id="help-btn">
+	<div class="container-fluid">
+		<div class="row" id="gamehud">
+			<h1 id="timeDisplay" class="col-xs-12">Old Bridge: 17 Minutes Before Death</h1>
+			<p class="col-xs-12" id="shortDescription">Save everyone. Cross the bridge in time. Use your time wisely.</p>
+			<ul class="col-xs-12" id="duration-list">
+				<li class="duration-list-item" id="item-Professor">Professor: 10 min</li>
+				<li class="duration-list-item" id="item-Girl">Girl: 2 min</li>
+				<li class="duration-list-item" id="item-Boy">Boy: 1 min</li>
+				<li class="duration-list-item" id="item-Janitor">Janitor: 5 min</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-xs-1">
+				
+			</div>
+			<div class="col-xs-10">
+				<div class="row">
+					<span class="col-xs-5"></span>
+					<span class="col-xs-2 btn-cross">cross</span>
+					<span class="col-xs-5"></span>
+				</div>
+				<div class="row">
+					<span class="col-xs-4 unsafe-side btn">
+						<a href="#" data-index="0" class="col-xs-3 marker"></a>
+						<a href="#" data-index="1" class="col-xs-3 marker gg"></a>
+						<a href="#" data-index="2" class="col-xs-3 marker"></a>
+						<a href="#" data-index="3" class="col-xs-3 marker"></a>
+					</span>
+					<span class="col-xs-4">
+						<div class="row bridge">
+							<a href="#" data-index="0" class="col-xs-2 bridge-unsafe-side marker"></a>
+							<a href="#" data-index="1" class="col-xs-2 bridge-unsafe-side marker"></a>
+
+							<a href="#" class="col-xs-4"></a>
+
+							<a href="#" data-index="0" class="col-xs-2 bridge-safe-side marker"></a>
+							<a href="#" data-index="1" class="col-xs-2 bridge-safe-side marker"></a>
+						</div>
+					</span>
+					<span class="col-xs-4 safe-side">
+						<a href="#" data-index="0" class="col-xs-3 marker"></a>
+						<a href="#" data-index="1" class="col-xs-3 marker"></a>
+						<a href="#" data-index="2" class="col-xs-3 marker"></a>
+						<a href="#" data-index="3" class="col-xs-3 marker"></a>
+					</span>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1 zombiezone-desc">
+				
+			</div>
+			<div class="col-xs-10">
+				<div class="row">
+					<span class="col-xs-4 zombiezone-desc">Zombie Zone</span>
+					<span class="col-xs-4 bridge-desc">Bridge</span>
+					<span class="col-xs-4 safezone-desc">Safe Zone</span>
+				</div>
+			</div>
+			<div class="col-xs-1 safezone-desc">
+				
+			</div>
+		</div>
+	</div>
+	<canvas id="canvas"></canvas>
+</body>
+</html>

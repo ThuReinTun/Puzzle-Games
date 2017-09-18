@@ -427,5 +427,5 @@ $(document).ready(function() {
 
 /* // //  button click show info() */
 function showHelp() {
-	alert("Zombie attack");
+	alert("Zombie attack broke out. An old professor, two of his students and a janitor were together running away from zombies. On their way, they found an old bridge across the river. They must cross the bridge to get to safe zone. But the bridge can only carry the weight of 2 people. The professor calculated the zombies would reach the bridge exactly after 17 minutes long. He takes 10 minutes to cross the bridge. The janitor takes 5 minutes, the girl student takes 2 minutes and the boy takes 1 minute. The night was dark and stormy. So it is impossible to cross the bridge without the lamp. Use your time wisely to get everyone to the safe zone. If you take too long (longer than 17 minutes), zombies won't be waiting.");
 }

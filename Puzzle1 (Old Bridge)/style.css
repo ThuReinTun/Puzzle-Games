@@ -67,13 +67,15 @@ li#item-Janitor {
 
 .marker {
 	border: 1pt dotted grey;
-	height: 20px;
+	height: 50px;
+	line-height: 50px;
 }
 .bridge {
 	background-color: yellow;
 	border-bottom: 5pt solid orange;
 	text-align: center;
-	height: 30px;
+
+	height: 100px;
 }
 .safe-side, .unsafe-side {
 	padding: 0;
@@ -81,7 +83,7 @@ li#item-Janitor {
 	background-color: white;
 	border-bottom: 5pt solid green;
 	text-align: center;
-	height: 30px;
+	height: 100px;
 }
 .safezone-desc, .zombiezone-desc, .bridge-desc {
 	padding: 0;

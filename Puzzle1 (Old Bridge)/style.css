@@ -10,7 +10,9 @@ canvas {
 	position: absolute;
 	margin: 0;
 }
-
+.container-fluid {
+	margin: 0 10px;
+}
 #gamehud {
 
 }

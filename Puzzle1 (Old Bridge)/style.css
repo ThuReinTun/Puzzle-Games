@@ -75,7 +75,7 @@ li#item-Janitor {
 	border-bottom: 5pt solid orange;
 	text-align: center;
 
-	height: 100px;
+	height: 105px;
 }
 .safe-side, .unsafe-side {
 	padding: 0;
@@ -83,7 +83,7 @@ li#item-Janitor {
 	background-color: white;
 	border-bottom: 5pt solid green;
 	text-align: center;
-	height: 100px;
+	height: 105px;
 }
 .safezone-desc, .zombiezone-desc, .bridge-desc {
 	padding: 0;
